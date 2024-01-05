@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frujico</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.6/css/all.css">
+    <link rel="icon" href="img/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="products.css" />
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-body"
+      data-bs-theme="dark"
+      style="animation: loadanimation 1s"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.png" alt="Bootstrap" width="40" height="40" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Products</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-dark" type="submit" style="background-color: #f88807;">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <swiper-container class="mySwiper" pagination="true">
+      <swiper-slide class="slide1">
+        <div class="slide-image"></div>
+        <h1 class="text-light fw-bold display-3">Exotic Products</h1>
+        <br />
+        <p class="slide-text">
+          Sip into paradise with our exotic fruit juices—nature's vibrant
+          symphony bottled just for you. <br />
+          Elevate your taste experience with every refreshing drop. Unearth the
+          extraordinary, one sip at a time.
+        </p>
+        <a href="#exotic" class="btn btn-lg"
+          ><span class="btn_span"></span>See Now</a
+        >
+      </swiper-slide>
+      <swiper-slide class="slide2">
+        <h1 class="text-light fw-bold display-3">Classics</h1>
+        <br />
+        <p class="slide-text">
+          Savor the timeless essence of nature with our exquisite collection of
+          classic fruit juices. <br />
+          Elevate your taste experience and order from our premium selection on
+          our ecommerce platform today.
+        </p>
+        <a href="#classic" class="btn btn-lg"><span class="btn_span"></span>See Now</a>
+      </swiper-slide>
+      <swiper-slide class="slide3">
+        <h1 class="text-light fw-bold display-3">Delight Products</h1>
+        <br />
+        <p class="slide-text">
+          Sip the essence of joy with our exquisite fruit juices. Refresh your
+          senses and elevate your moments with nature's sweetness. <br />
+          Explore a symphony of flavors on our delightful ecommerce platform
+        </p>
+        <a href="#delight" class="btn btn-lg"><span class="btn_span"></span>See Now</a>
+      </swiper-slide>
+    </swiper-container>
+
+    <div class="container-fluid" id="exotic">
+      <h1 class="text-center text-dark fw-bold display-4 mt-4">
+        Exotic Products
+      </h1>
+      <div class="products">
+        <div class="container">
+          <div class="row card-deck">
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="img/king.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">King Coconut Juice</h5>
+
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">
+                          Add to Cart
+                        </button>
+                        &nbsp;&nbsp;&nbsp;
+                       
+                          <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                    
+                      </div>
+                      &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <span class="price">LKR:400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="img/karavila.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Karavila Juice</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">
+                          Add to Cart
+                        </button>
+                        &nbsp;&nbsp;&nbsp;
+                       
+                          <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                    
+                      </div>
+                      &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <span class="price">LKR:400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="img/Tamarind-juice.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Tamarind Juice</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm">
+                        Add to Cart
+                      </button>
+                      &nbsp;&nbsp;&nbsp;
+                     
+                        <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                  
+                    </div>
+                    &nbsp;&nbsp;&nbsp;
+                    <span class="price">LKR:400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="img/veralu.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Veralu Juice</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">
+                          Add to Cart
+                        </button>
+                        &nbsp;&nbsp;&nbsp;
+                       
+                          <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                    
+                      </div>
+                      &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <span class="price">LKR:400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="img/thal.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Palm Juice</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">
+                          Add to Cart
+                        </button>
+                        &nbsp;&nbsp;&nbsp;
+                       
+                          <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                    
+                      </div>
+                      &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <span class="price">LKR:400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img src="img/uk.jpg" class="card-img-top" />
+                <div class="card-body">
+                  <h5 class="card-title">Sugar Cane Juice</h5>
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <div class="btn-group">
+                      <div class="btn-group">
+                        <button type="button" class="btn btn-sm">
+                          Add to Cart
+                        </button>
+                        &nbsp;&nbsp;&nbsp;
+                       
+                          <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                    
+                      </div>
+                      &nbsp;&nbsp;&nbsp;
+                    </div>
+                    <span class="price">LKR:400</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid" id="classic">
+      <h1 class="text-center text-dark fw-bold display-4 mt-4">
+        Classics
+      </h1>
+      <div class="products">
+        <div class="container">
+            <div class="row card-deck">
+                <div class="col-lg-4 mb-4">
+                  <div class="card">
+                    <img src="img/apple.webp" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Apple Juice</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm">
+                            Add to Cart
+                          </button>
+                          &nbsp;&nbsp;&nbsp;
+                         
+                            <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                      
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <span class="price">LKR:300</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/mango.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Mango Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:300</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-4 mb-4">
+                  <div class="card">
+                    <img src="img/orange.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Orange Juice</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-sm">
+                            Add to Cart
+                          </button>
+                          &nbsp;&nbsp;&nbsp;
+                         
+                            <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                      
+                        </div>
+                        &nbsp;&nbsp;&nbsp;
+                        <span class="price">LKR:300</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/manda.jpeg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Mandarin Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:300</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/guava.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Guava Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:300</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/papaya.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Papaya Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:300</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/watermelon.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Watermelon Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:300</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/pine.png" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Pine Apple Juice </h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:300</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/black-grape-juice-fresh-fruit-juice-100-25-natural-pulp-500x500.webp" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Grape Jucie</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:300</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    </div>
+    
+    <div class="container-fluid" id="delight">
+      <h1 class="text-center text-dark fw-bold display-4 mt-4">
+        Deligths
+      </h1>
+      <div class="products">
+        <div class="container">
+            <div class="row card-deck">
+                <div class="col-lg-4 mb-4">
+                  <div class="card">
+                    <img src="img/black current.jpg" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Black Current Juice</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                      <button type="button" class="btn btn-sm">
+                        Add to Cart
+                      </button>
+                      &nbsp;&nbsp;&nbsp;
+                     
+                        <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                  
+                    </div>
+                    &nbsp;&nbsp;&nbsp;
+                        <span class="price">LKR:600</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/promaganate.webp" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Pomegranate Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:600</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                <div class="col-lg-4 mb-4">
+                  <div class="card">
+                    <img src="img/kiwi.jfif" class="card-img-top">
+                    <div class="card-body">
+                      <h5 class="card-title">Kiwi Juice</h5>
+                      <div class="d-flex justify-content-between align-items-center">
+                        <div class="btn-group">
+                      <button type="button" class="btn btn-sm">
+                        Add to Cart
+                      </button>
+                      &nbsp;&nbsp;&nbsp;
+                     
+                        <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                  
+                    </div>
+                    &nbsp;&nbsp;&nbsp;
+                        <span class="price">LKR:600</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/ramnutan.webp" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Rambutan Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:600</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/rasbery.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Raspberry Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:600</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 mb-4">
+                    <div class="card">
+                      <img src="img/mojitos-2-500x500.jpg" class="card-img-top">
+                      <div class="card-body">
+                        <h5 class="card-title">Mojito Juice</h5>
+                        <div class="d-flex justify-content-between align-items-center">
+                          <div class="btn-group">
+                            <button type="button" class="btn btn-sm">
+                              Add to Cart
+                            </button>
+                            &nbsp;&nbsp;&nbsp;
+                           
+                              <input type="number" step="1" max="10" value="1"  class="quantity-field border-0 text-center w-25">
+                        
+                          </div>
+                          &nbsp;&nbsp;&nbsp;
+                          <span class="price">LKR:600</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+        </div>
+    </div>
+    </div>
+
+    <footer>
+      <div class="container-fluid bg-dark">
+          <div class="row py-5 mx-4 d-flex justify-content-around">
+              <!--Footer Logo & Socials-->               
+              <div class="col-sm-12 col-md-5 px-4 px-md-0 footer-about">
+                  <div class="mx-md-1 mb-4">
+                      <!--Footer Logo Name & Image-->
+                      <div class="footer-about-logo">
+                          <div class="mx-md-1 d-inline-flex justify-content-start">
+                              <img class="img footer-logo-image" src="img/logo.png" alt="frujico-logo-footer" data-at2x="assets/img/logo.png" width="72px" height="72px" />
+                              <div class="text-start mx-2">
+                                  <div class="footer-company-name-01">Frujico</div>
+                                  <div class="footer-company-name-02">Drinks</div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="mx-1 my-2 text-md-left footer-slogan">
+                          <p><i>A Symphony of Flavors in Every Glass</i></p>
+                      </div>
+                      <!--Footer Socials-->
+                      <div class="footer-socials-media-q">
+                          <div class="d-inline-flex my-1 footer-socials">
+                              <div class="p-3 mx-2 footer-socials-link">
+                                  <i class="bi bi-facebook"></i>
+                              </div>
+                              <div class="p-3 mx-2 footer-socials-link">
+                                  <i class="bi bi-twitter-x"></i>
+                              </div>
+                              <div class="p-3 mx-2 footer-socials-link">
+                                  <i class="bi bi-youtube"></i>
+                              </div>
+                              <div class="p-3 mx-2 footer-socials-link">
+                                  <i class="bi bi-instagram"></i>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Footer Contacts-->
+              <div class="col-sm-12 col-md-4 my-2 my-md-0 px-4 px-md-0">
+                  <div class="mb-4">
+                      <div class="text-md-left footer-contact-title">Contact Us</div>
+                      <div class="text-white mt-3 footer-contact-group">
+                          <div class="text-md-left my-2 footer-contact-item">
+                              <i class="bi bi-geo-alt-fill"></i>
+                              <span class="m-2">Royal College, Colombo 07</span>
+                          </div>
+                          <div class="text-md-left my-2 footer-contact-item">
+                              <i class="bi bi-telephone-fill"></i>
+                              <span class="m-2">+94 77 333 0911</span>
+                          </div>
+                          <div class=" text-md-left my-2 footer-contact-item">
+                              <i class="bi bi-envelope-fill"></i>
+                              <span class="m-2">frujico@gmail.com</span>
+                          </div>
+                          <div class="text-md-left my-2 footer-contact-item">
+                              <i class="bi bi-at"></i>
+                              <span class="m-2">#frujico_drinks</span>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Footer Navbar-->
+              <div class="col-sm-12 col-md-3 float-md-start px-4 px-md-0">
+                  <div class="mb-5">
+                      <div class="text-md-left footer-navbar-title">Quick Links</div>
+                      <div class="text-white mt-3 footer-navbar-links-group">
+                          <div class="text-md-left my-2">
+                            <a class="text-decoration-none footer-navbar-link" href="index.html">Home</a>
+                          </div>
+                          <div class="text-md-left my-2">
+                            <a class="text-decoration-none footer-navbar-link" href="products.html">Our Products</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <!--Footer Copyright & Info-->
+              <div class="">
+                  <div class="d-flex justify-content-center">
+                      <ul class="list-inline footer-group">
+                          <li class="px-1 list-inline-item footer-group-items">Privacy Policy</li>
+                          <li class="px-1 list-inline-item footer-group-items">Terms & Conditions</li>
+                          <li class="px-1 list-inline-item footer-group-items">News</li>
+                          <li class="px-1 list-inline-item footer-group-items">Help</li>
+                      </ul>
+                  </div>
+                  <div class="text-center footer-copyright">
+                      <p>Copyright © 2023 By <strong>Codials™</strong> All Rights Reseved.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+  </body>
+</html>
